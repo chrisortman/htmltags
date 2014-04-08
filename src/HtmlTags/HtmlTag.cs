@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Security.Principal;
+using System.Text;
 using System.Text.RegularExpressions;
 using System.Threading;
 using System.Web;
@@ -13,7 +14,7 @@ namespace HtmlTags
 
     public class HtmlTag : ITagSource
 #if !LEGACY
-        , IHtmlString
+        , IHtmlString, Nancy.ViewEngines.Razor.IHtmlString
 #endif
     {
         public static HtmlTag Empty()
@@ -870,4 +871,6 @@ namespace HtmlTags
             }
         }
     }
+
+  
 }

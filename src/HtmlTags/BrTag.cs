@@ -30,6 +30,7 @@ namespace HtmlTags
                     html.RenderBeginTag("br");
                     html.RenderEndTag();
                     break;
+
             }
         }
     }
